@@ -8,30 +8,40 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MySQL</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>React</li>
-        <li>Redux</li>
-      </ul>
+      <div className="flex gap-10">
+        <div>
+          <h13 className="text-2xl font-bold">Frontend</h13>
+          <ul className="list-disc pl-2">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold">Backend</h3>
+          <ul className="list-disc pl-2">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostGreSQL</li>
+          </ul>
+        </div>
+      </div>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Bharati Vidyapeeth College of Engineering, Pune
-          <ul className="list-none pl-2">
-            <li className="text-sm">- Graduated with a score of 9.40/10 GPA</li>
+      <div>
+          <h15 className="text-2xl font-bold">Bharati Vidyapeeth College of Engineering, Pune</h15>
+          <ul className="list-disc pl-2">
+            <li>Graduated with a score of 9.40/10 GPA</li>
           </ul>
-        </li>
-      </ul>
+        </div>
     ),
   },
   {

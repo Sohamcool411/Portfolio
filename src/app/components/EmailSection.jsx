@@ -62,10 +62,15 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="mt-12 mb-10 pt-12 pb-12 rounded-lg"
+      style={{
+        background: "rgb(30,30,30)",
+        backgroundColor:
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+      }}
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="pl-10 z-10">
+      <div className=" pl-10 z-10" >
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
@@ -75,7 +80,7 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row  gap-2">
+        <div className="socials flex flex-row  gap-2" >
           <a target='_blank' href="https://github.com/Sohamcool411">
             <Image src={GithubIcon} alt="Github Icon" />
           </a>
@@ -103,11 +108,9 @@ const EmailSection = () => {
           
         </div>
       </div>
-      <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
-          </div>
+      {/* <BackgroundGradientAnimation>
       </BackgroundGradientAnimation>
-      
+       */}
       {/* <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
