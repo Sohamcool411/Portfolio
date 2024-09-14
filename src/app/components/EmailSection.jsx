@@ -5,38 +5,38 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  // const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     email: e.target.email.value,
+  //     subject: e.target.subject.value,
+  //     message: e.target.message.value,
+  //   };
+  //   const JSONdata = JSON.stringify(data);
+  //   const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+  //   // Form the request for sending data to the server.
+  //   const options = {
+  //     // The method is POST because we are sending data.
+  //     method: "POST",
+  //     // Tell the server we're sending JSON.
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     // Body of the request is the JSON data we created above.
+  //     body: JSONdata,
+  //   };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+  //   const response = await fetch(endpoint, options);
+  //   const resData = await response.json();
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
-  };
+  //   if (response.status === 200) {
+  //     console.log("Message sent.");
+  //     setEmailSubmitted(true);
+  //   }
+  // };
 
   return (
     <section
@@ -63,7 +63,7 @@ const EmailSection = () => {
           </a>
         </div>
       </div>
-      <div>
+      {/* <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -124,7 +124,7 @@ const EmailSection = () => {
             </button>
           </form>
         )}
-      </div>
+      </div> */}
     </section>
   );
 };
