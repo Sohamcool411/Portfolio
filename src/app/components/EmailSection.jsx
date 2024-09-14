@@ -64,12 +64,12 @@ const EmailSection = () => {
       id="contact"
       className="mt-12 mb-10 pt-12 pb-12 rounded-lg"
       style={{
-        background: "rgb(30,30,30)",
+        background: "rgb(82, 4, 143)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> */}
       <div className=" pl-10 z-10" >
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
